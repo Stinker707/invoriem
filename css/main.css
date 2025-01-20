@@ -24,13 +24,8 @@
 }
 
 /* Links */
-a,
-a:link,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
+a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -58,10 +53,6 @@ p {
 ul,
 ul li {
   list-style: none;
-}
-
-img {
-  vertical-align: top;
 }
 
 img,
@@ -123,53 +114,104 @@ body {
 }
 
 .container {
-  max-width: 1720px;
+  max-width: 1920px;
   margin: 0 auto;
+  padding: 0 100px;
 }
 
 .header {
-  height: 100vh;
-  background-image: url(../img/header/header-bg.jpg);
-  background-size: cover;
-  background-position: center center;
+  padding-top: 44px;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
-.header-container {
-  padding-top: 44px;
+.btn {
+  --arrow-right-fill: currentColor;
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.btn--light {
+  color: #114455;
+  border: 1px solid currentColor;
+}
+.btn--dark {
+  color: #FFFFFF;
+  background-color: #114455;
+}
+.btn__text {
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: 800;
+  display: block;
 }
 
 .header-nav {
   display: flex;
-  justify-items: center;
   justify-content: space-between;
 }
-
-.header-nav-links {
+.header-nav__links {
   display: flex;
-  justify-items: center;
-  justify-content: space-between;
+  align-items: center;
   -moz-column-gap: 118px;
        column-gap: 118px;
 }
-
-.header-nav-links__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.header-nav__link {
   color: black;
   font-size: 20px;
   font-weight: 800;
 }
 
-.header-nav-btn {
-  padding: 10px 24px;
-  border: 1px solid #114455;
-  border-radius: 2px;
-  font-size: 20px;
-  font-weight: 800;
+.first-screen {
+  background-image: url(/img/header/header-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.first-screen__btn {
+  margin-top: 24px;
+}
+.first-screen__arrow-down {
+  position: absolute;
+  width: 38px;
+  height: 28px;
+  left: 50%;
+  bottom: 0;
+  margin-bottom: 58px;
+}
+.first-screen__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 48px;
+}
+.first-screen__title {
   color: #114455;
+  font-size: 80px;
+  font-weight: 800;
+}
+.first-screen__description {
+  color: #1F1F1F;
+  font-size: 34px;
+  font-weight: 500;
 }
 
-.header-nav-btn__img {
-  padding: 12px 24px 12px 16px;
+.case-studies {
+  padding-top: 104px;
+}
+.case-studies__title {
+  font-size: 80px;
+  color: #1F1F1F;
+  font-weight: 800;
+}
+.case-studies__description {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 44px;
+  opacity: 70%;
 }/*# sourceMappingURL=main.css.map */
