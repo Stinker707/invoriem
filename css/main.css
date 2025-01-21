@@ -113,10 +113,18 @@ body {
   font-family: "Gilroy";
 }
 
+.none {
+  display: none;
+}
+
 .container {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 100px;
+}
+
+.carusel-container {
+  padding-left: calc((100% - 1720px) / 2);
 }
 
 .header {
@@ -199,19 +207,131 @@ body {
   color: #1F1F1F;
   font-size: 34px;
   font-weight: 500;
+  opacity: 70%;
 }
 
 .case-studies {
   padding-top: 104px;
 }
+.case-studies__container {
+  max-width: 1076px;
+}
 .case-studies__title {
+  padding-top: 80px;
+}
+.case-studies__text {
+  margin-top: 12px;
+}
+
+.title {
   font-size: 80px;
   color: #1F1F1F;
   font-weight: 800;
 }
-.case-studies__description {
+
+.text {
   font-size: 28px;
   font-weight: 500;
   line-height: 44px;
   opacity: 70%;
+}
+
+.slider {
+  margin-top: 100px;
+  display: flex;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+
+.slider__item {
+  position: relative;
+}
+
+.city {
+  position: absolute;
+  font-weight: 800;
+  font-size: 140px;
+  left: 0;
+  bottom: 114px;
+  background-image: linear-gradient(90deg, rgb(17, 68, 85) 80px, rgb(255, 255, 255) 80px);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.city-img {
+  max-width: 645px;
+  padding-left: 80px;
+}
+
+.invoriem {
+  padding-top: 104px;
+}
+.invoriem__container {
+  max-width: 1076px;
+}
+.invoriem__title {
+  padding-top: 80px;
+}
+.invoriem__text {
+  margin-top: 12px;
+}
+.invoriem__content {
+  padding-top: 78px;
+}
+.invoriem__video {
+  position: relative;
+}
+
+.video__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video__stock {
+  width: 100%;
+  vertical-align: top;
+}
+.video__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9;
+  transform: translate(-50%, -50%);
+}
+
+.video-overlay::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 68, 85, 0.5);
+}
+
+.footer {
+  padding-top: 184px;
+  padding-bottom: 80px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(31, 31, 31, 0.7019607843);
+  line-height: 36px;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 118px;
+       column-gap: 118px;
+}
+
+.social-links {
+  display: flex;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
 }/*# sourceMappingURL=main.css.map */

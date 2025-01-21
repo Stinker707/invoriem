@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoriem</title>
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -50,20 +52,79 @@
             </button>
         </div>
     </section>
-    <!-- <section class="section container">
-        <div class="case-studies">
-            <h2 class="case-studies__title">
-                Case Studies
-            </h2>
-            <p class="case-studies__description">
-                We deliver a unique and truly bespoke approach to delivering international developments to market, with over 10 years
-                success around the world.
-            </p>
-
-            <div class="section-carusel">
-
+    <section class="case-studies">
+        <div class="container">
+            <div class="case-studies__container">
+                <h2 class="case-studies__title title">
+                    Case Studies
+                </h2>
+                <p class="case-studies__text text">
+                    We deliver a unique and truly bespoke approach to delivering international developments to market, with over 10
+                    years
+                    success around the world.
+                </p>
             </div>
         </div>
-    </section> -->
+        <div class="carusel-container">
+            <div class="slider owl-carousel owl-theme">
+                <div class="slider__item">
+                    <h2 class="city">France</h2>
+                    <img class="city-img" src="img/slider/slider-01.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <h2 class="city">Moroco</h2>
+                    <img class="city-img" src="img/slider/slider-02.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <h2 class="city">London</h2>
+                    <img class="city-img" src="img/slider/slider-03.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <h2 class="city">Portugal</h2>
+                    <img class="city-img" src="img/slider/slider-04.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="invoriem">
+        <div class="container">
+            <div class="invoriem__container">
+                <h2 class="invoriem__title title">
+                    We are Invoriem
+                </h2>
+                <p class="invoriem__text text">
+                    We fulfill international property developments
+                </p>
+            </div>
+
+            <div class="invoriem__content">
+                <div class="invoriem__video video video-overlay">
+                    <button class="video__btn" id="video-btn"> <img src="./img/Icons/play-btn.svg" alt="Play"></button>
+                    <img class="video__img" src="/img/video-picture.jpg" alt="">
+                    <video class="video__stock" id="video-stock" loop src="./video/futuristic-architecture-flower.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <span>Copyright © 2020 Invoriem</span>
+            <div class="footer__socials">
+                <span><a href="mailto:info@invoriem.com">info@invoriem.com</a></span>
+                <div class="footer__social-links social-links">
+                    <a href="" class="social-links__link"><img src="./img/Icons/instagram.svg" alt=""></a>
+                    <a href="" class="social-links__link"><img src="./img/Icons/facebook.svg" alt=""></a>
+                    <a href="" class="social-links__link"><img src="./img/Icons/twitter.svg" alt=""></a>
+                    <a href="" class="social-links__link"><img src="./img/Icons/linkedIn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
