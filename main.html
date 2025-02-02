@@ -28,7 +28,65 @@
                         </a>
                     </li>
                 </ul>
+                <button class="header-mobi-close-btn" id="close-btn">
+                    <div class="header-mobi-close-btn__line"></div>
+                    <div class="header-mobi-close-btn__line"></div>
+                </button>
             </nav>
+            <div class="header-menu-mobi menu-mobi none">
+                <h2 class="menu-mobi__title">
+                    Hello <br>
+                    Bonjour <br>
+                    Olá <br>
+                    Marhabaan
+                </h2>
+            
+                <div class="menu-mobi__contacts contacts">
+                    <h2 class="contacts__title">Contact us</h2>
+                    <span class="contacts__mail">
+                        <a href="mailto:info@invoriem.com">info@invoriem.com</a>
+                    </span>
+                    <span class="contacts__tel">
+                        <a href="tel:+555 1234 52 58">+555 1234 52 58</a>
+                    </span>
+                    <span class="contacts__address">
+                        3517 W. Gray St. <br>
+                        Utica, Pennsylvania <br>
+                        57867
+                    </span>
+                </div>
+            
+                <footer class="footer">
+                    <div class="footer__container container">
+                        <span class="footer__copyright">Copyright © 2020 Invoriem</span>
+                        <span><a href="mailto:info@invoriem.com">info@invoriem.com</a></span>
+                        <div class="footer__socials">
+                            <div class="footer__social-links social-links">
+                                <a href="#" class="social-links__link">
+                                    <svg class="social-links__img">
+                                        <use xlink:href="./img/icons/socials.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-links__link">
+                                    <svg class="social-links__img">
+                                        <use xlink:href="./img/icons/socials.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-links__link">
+                                    <svg class="social-links__img">
+                                        <use xlink:href="./img/icons/socials.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-links__link">
+                                    <svg class="social-links__img">
+                                        <use xlink:href="./img/icons/socials.svg#linkedIn"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
     </header>
     <section class="first-screen">
@@ -47,12 +105,12 @@
                         fill="var(--arrow-right-fill)" />
                 </svg>
             </a>
-            <button>
+            <button id="scroll-btn">
                 <img class="first-screen__arrow-down" src="img/header/arrow-douwn.svg" alt="arrow down">
             </button>
         </div>
     </section>
-    <section class="case-studies">
+    <section class="case-studies" id="case-studies">
         <div class="container">
             <div class="case-studies__container">
                 <h2 class="case-studies__title title">
@@ -69,19 +127,19 @@
             <div class="slider owl-carousel owl-theme">
                 <div class="slider__item">
                     <h2 class="city">France</h2>
-                    <img class="city-img" src="img/slider/slider-01.jpg" alt="">
+                    <img class="city-img" src="img/slider/slider-01.jpg" alt="France">
                 </div>
                 <div class="slider__item">
                     <h2 class="city">Moroco</h2>
-                    <img class="city-img" src="img/slider/slider-02.jpg" alt="">
+                    <img class="city-img" src="img/slider/slider-02.jpg" alt="Moroco">
                 </div>
                 <div class="slider__item">
                     <h2 class="city">London</h2>
-                    <img class="city-img" src="img/slider/slider-03.jpg" alt="">
+                    <img class="city-img" src="img/slider/slider-03.jpg" alt="London">
                 </div>
                 <div class="slider__item">
                     <h2 class="city">Portugal</h2>
-                    <img class="city-img" src="img/slider/slider-04.jpg" alt="">
+                    <img class="city-img" src="img/slider/slider-04.jpg" alt="Portugal">
                 </div>
             </div>
         </div>
@@ -110,14 +168,30 @@
 
     <footer class="footer">
         <div class="footer__container container">
-            <span>Copyright © 2020 Invoriem</span>
+        <span>Copyright © 2020 Invoriem</span>
+        <span><a href="mailto:info@invoriem.com">info@invoriem.com</a></span>
             <div class="footer__socials">
-                <span><a href="mailto:info@invoriem.com">info@invoriem.com</a></span>
                 <div class="footer__social-links social-links">
-                    <a href="" class="social-links__link"><img src="./img/Icons/instagram.svg" alt=""></a>
-                    <a href="" class="social-links__link"><img src="./img/Icons/facebook.svg" alt=""></a>
-                    <a href="" class="social-links__link"><img src="./img/Icons/twitter.svg" alt=""></a>
-                    <a href="" class="social-links__link"><img src="./img/Icons/linkedIn.svg" alt=""></a>
+                    <a href="#" class="social-links__link">
+                        <svg class="social-links__img">
+                            <use xlink:href="./img/icons/socials.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-links__link">
+                        <svg class="social-links__img">
+                            <use xlink:href="./img/icons/socials.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-links__link">
+                        <svg class="social-links__img">
+                            <use xlink:href="./img/icons/socials.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-links__link">
+                        <svg class="social-links__img">
+                            <use xlink:href="./img/icons/socials.svg#linkedIn"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

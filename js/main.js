@@ -3,6 +3,7 @@ $(document).ready(function () {
         dots: false,
         margin: 48,
         loop: true,
+        autoWidth: true,
         autoplay: true,
         autoplayTimeout: 3000
     });
@@ -26,3 +27,7 @@ videoWrapper.addEventListener('click', function () {
         videoFile.pause();
     }
 })
+
+document.querySelector('#scroll-btn').addEventListener('click', function () {
+    document.querySelector('#case-studies').scrollIntoView({ behavior: 'smooth' });
+});
