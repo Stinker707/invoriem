@@ -5,7 +5,7 @@ $(document).ready(function () {
         loop: true,
         autoWidth: true,
         autoplay: true,
-        autoplayTimeout: 3000
+        autoplayTimeout: 3000,
     });
 });
 
@@ -31,3 +31,13 @@ videoWrapper.addEventListener('click', function () {
 document.querySelector('#scroll-btn').addEventListener('click', function () {
     document.querySelector('#case-studies').scrollIntoView({ behavior: 'smooth' });
 });
+
+const btn = document.querySelector('#close-btn');
+const menuMobi = document.querySelector('#header-menu-mobi');
+const body = document.body;
+
+btn.addEventListener('click', function(){
+    btn.classList.toggle('header-mobi-close-btn--is-active');
+    menuMobi.classList.toggle('header-menu-mobi--is-visible');
+    body.classList.toggle('no-scroll');
+})

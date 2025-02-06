@@ -33,7 +33,7 @@
                     <div class="header-mobi-close-btn__line"></div>
                 </button>
             </nav>
-            <div class="header-menu-mobi menu-mobi none">
+            <div class="header-menu-mobi menu-mobi" id="header-menu-mobi">
                 <h2 class="menu-mobi__title">
                     Hello <br>
                     Bonjour <br>
@@ -56,10 +56,10 @@
                     </span>
                 </div>
             
-                <footer class="footer">
+                <footer class="footer menu-mobi__footer">
                     <div class="footer__container container">
                         <span class="footer__copyright">Copyright © 2020 Invoriem</span>
-                        <span><a href="mailto:info@invoriem.com">info@invoriem.com</a></span>
+                        <span class="contacts__mail"><a href="mailto:info@invoriem.com">info@invoriem.com</a></span>
                         <div class="footer__socials">
                             <div class="footer__social-links social-links">
                                 <a href="#" class="social-links__link">
@@ -91,26 +91,41 @@
     </header>
     <section class="first-screen">
         <div class="first-screen__container container">
-            <h1 class="first-screen__title">
-                We build dreams, <br> not just walls
-            </h1>
-            <p class="first-screen__description">
-                Fulfill your international property developments with us
-            </p>
-            <a href="#!" class="first-screen__btn btn btn--dark"> 
-                <span class="btn__text">Let’s Talk</span>
-                <svg width="28" height="16">
-                    <path
-                        d="M20.6863 0L19.4657 1.47037C19.4657 1.47037 22.6405 4.76444 24.8317 6.82296C17.1461 6.74074 0 6.8237 0 6.8237V8.58815C0 8.58815 17.1518 8.5237 24.8346 8.58815C22.6434 10.9407 19.4686 14.2356 19.4686 14.2356L20.6863 16L28 7.7037L20.6863 0Z"
-                        fill="var(--arrow-right-fill)" />
-                </svg>
-            </a>
-            <button id="scroll-btn">
-                <img class="first-screen__arrow-down" src="img/header/arrow-douwn.svg" alt="arrow down">
-            </button>
+            <div class="first-screen__desktop-content">
+                <div class="first-screen__content">
+                    <h1 class="first-screen__title">
+                        We build dreams, <br> not just walls
+                    </h1>
+                    <p class="first-screen__description">
+                        Fulfill your international property developments with us
+                    </p>
+                    <a href="#!" class="first-screen__btn btn btn--dark">
+                        <span class="btn__text">Let’s Talk</span>
+                        <svg width="28" height="16">
+                            <path
+                                d="M20.6863 0L19.4657 1.47037C19.4657 1.47037 22.6405 4.76444 24.8317 6.82296C17.1461 6.74074 0 6.8237 0 6.8237V8.58815C0 8.58815 17.1518 8.5237 24.8346 8.58815C22.6434 10.9407 19.4686 14.2356 19.4686 14.2356L20.6863 16L28 7.7037L20.6863 0Z"
+                                fill="var(--arrow-right-fill)" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="first-screen__mobile-content">
+                <div class="first-screen__content">
+                    <img class="first-screen__logo" src="img/logo.svg" alt="Invoriem project">
+                    <p class="first-screen__description">
+                        We fulfill international <br> property developments
+                    </p>
+                </div>
+            </div>
+            <div class="first-screen__bottom-block">
+                <button class="first-screen__arrow-down" id="scroll-btn">
+                    <img src="img/header/arrow-douwn.svg" alt="arrow down">
+                </button>
+            </div>
         </div>
     </section>
-    <section class="case-studies" id="case-studies">
+    <section class="section case-studies" id="case-studies">
         <div class="container">
             <div class="case-studies__container">
                 <h2 class="case-studies__title title">
@@ -145,7 +160,7 @@
         </div>
     </section>
 
-    <section class="invoriem">
+    <section class="section invoriem">
         <div class="container">
             <div class="invoriem__container">
                 <h2 class="invoriem__title title">
@@ -166,10 +181,10 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="section footer">
         <div class="footer__container container">
         <span>Copyright © 2020 Invoriem</span>
-        <span><a href="mailto:info@invoriem.com">info@invoriem.com</a></span>
+        <span class="contacts__mail"><a href="mailto:info@invoriem.com">info@invoriem.com</a></span>
             <div class="footer__socials">
                 <div class="footer__social-links social-links">
                     <a href="#" class="social-links__link">
