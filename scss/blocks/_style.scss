@@ -21,14 +21,14 @@
 }
 
 .section {
-    margin-top: 144px;
+    padding-top: 144px;
 
     @media (max-width: 768px) {
-        margin-top: 80px;
+        padding-top: 80px;
     }
 }
 
-.carusel-container {
+.carousel-container {
     padding-left: 100px;
 
     @media (max-width: 1024px) {
@@ -119,17 +119,17 @@
 }
 
 .header-menu-mobi {
-    @media (max-width: 768px) {
-        display: none;
-        height: 100vh;
-        padding: 0 50px;
-        background-color: #fff;
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        right: 0;
+    display: none;
+    height: 100vh;
+    padding: 0 50px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
 
+    @media (max-width: 768px) {
         &--is-visible {
             display: block;
         }
@@ -226,13 +226,13 @@
 }
 
 .first-screen {
-    background-image: url('../../img/header/header-bg.jpg');
+    background-image: url('./../../img/header/header-bg.jpg');
     background-size: cover;
     background-position: center center;
     position: relative;
 
     @media (max-width: 375px) {
-        background-image: url('../../img/header/header-bg-mobile.jpg');
+        background-image: url('./../../img/header/header-bg-mobile.jpg');
     }
 
     &__btn {
@@ -510,9 +510,14 @@
     font-weight: 500;
     color: rgba(31, 31, 31, 70%);
     line-height: 36px;
+    margin-top: 144px;
 
     @media (max-width: 1024px) {
         font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 80px;
     }
 
     @media (max-width: 425px) {
