@@ -326,14 +326,14 @@ img {
 }
 
 .first-screen {
-  background-image: url(/img/header/header-bg.jpg);
+  background-image: url("../../img/header/header-bg.jpg");
   background-size: cover;
   background-position: center center;
   position: relative;
 }
 @media (max-width: 375px) {
   .first-screen {
-    background-image: url(/img/header/header-bg-mobile.jpg);
+    background-image: url("../../img/header/header-bg-mobile.jpg");
   }
 }
 .first-screen__btn {
