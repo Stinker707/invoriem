@@ -370,6 +370,7 @@ img {
 }
 .first-screen__container {
   height: 100vh;
+  min-height: 750px;
   display: flex;
   align-items: center;
 }
