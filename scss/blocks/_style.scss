@@ -29,7 +29,6 @@
 }
 
 .carusel-container {
-    // padding-left: calc((100% - 1720px) / 2);
     padding-left: 100px;
 
     @media (max-width: 1024px) {
@@ -73,7 +72,7 @@
             color: #FFFFFF;
             background-color: #114455;
             border: 1px solid #114455;
-         }
+        }
     }
 
     &--dark {
@@ -87,6 +86,7 @@
         }
     }
 }
+
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -103,8 +103,8 @@
         column-gap: 118px;
 
         @media (max-width: 768px) {
-                display: none;
-            }
+            display: none;
+        }
     }
 
     &__link {
@@ -152,9 +152,6 @@
 
     &__contacts {
         margin-top: 80px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 16px;
     }
 
     &__footer {
@@ -166,7 +163,10 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 6%;
-    color: #1F1F1F;
+    color: rgba(31, 31, 31, 70%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
 
     &__title {
         font-size: 24px;
@@ -175,12 +175,10 @@
         color: #1F1F1F;
     }
 
-    &__mail {
-        color:#4A2AD3;
-
-        @media (max-width: 425px) {
-            font-size: 14px;
-        }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
     }
 }
 
@@ -193,7 +191,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;;
+        justify-content: space-evenly;
         z-index: 3;
         width: 32px;
         height: 32px;
@@ -331,7 +329,7 @@
 
         @media (max-width: 375px) {
             font-size: 16px;
-            text-shadow: 0 4px 4px rgba(0,0,0,0.25);
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         }
     }
 
@@ -371,7 +369,7 @@
     font-size: 28px;
     font-weight: 500;
     line-height: 44px;
-    opacity: 70%;
+    color: rgba(31, 31, 31, 70%);
 
     @media (max-width: 1024px) {
         line-height: 39px;
@@ -394,10 +392,25 @@
     margin-top: 100px;
     display: flex;
     column-gap: 48px;
+
+    @media (max-width: 375px) {
+        margin-top: 32px;
+    }
 }
 
 .slider__item {
+    --city-img-padding: 80px;
     position: relative;
+    margin-right: 48px;
+
+    @media (max-width: 768px) {
+        --city-img-padding: 50px;
+    }
+
+    @media (max-width: 425px) {
+        --city-img-padding: 33px;
+        margin-right: 32px;
+    }
 }
 
 .city {
@@ -406,7 +419,7 @@
     font-size: 140px;
     left: 0;
     bottom: 114px;
-    background-image: linear-gradient(90deg, rgba(17, 68, 85, 1) 80px, rgba(255, 255, 255, 1) 80px);
+    background-image: linear-gradient(90deg, rgba(17, 68, 85, 1) var(--city-img-padding), rgba(255, 255, 255, 1) var(--city-img-padding));
     background-clip: text;
     color: transparent;
 
@@ -417,28 +430,21 @@
 }
 
 .city-img {
-    max-width: 725px;
-    padding-left: 80px;
-
-    @media (max-width: 425px) {
-        max-height: 264px;
-    }
+    padding-left: var(--city-img-padding);
 
     @media (max-width: 768px) {
         max-height: 500px;
     }
+
+    @media (max-width: 425px) {
+        max-height: 264px;
+    }
 }
 
 .invoriem {
-    // padding: 144px 0 224px;
-
     &__container {
         max-width: 1076px;
     }
-
-    // &__title {
-    //     padding-top: 80px;
-    // }
 
     &__text {
         margin-top: 12px;
@@ -453,12 +459,11 @@
     }
 
     &__video {
-    position: relative;
+        position: relative;
     }
 }
 
 .video {
-
     &__img {
         position: absolute;
         top: 0;
@@ -476,13 +481,14 @@
         left: 50%;
         z-index: 9;
         transform: translate(-50%, -50%);
+        width: 7%;
 
         @media (max-width: 768px) {
-            width: 80px
+            width: 12%;
         }
 
         @media (max-width: 425px) {
-            width: 40px
+            width: 14.7%;
         }
     }
 }
@@ -499,10 +505,10 @@
     }
 }
 
-.footer { 
+.footer {
     font-size: 20px;
     font-weight: 500;
-    color: #1f1f1fb3;
+    color: rgba(31, 31, 31, 70%);
     line-height: 36px;
 
     @media (max-width: 1024px) {
@@ -515,7 +521,7 @@
 
     &__copyright {
         @media (max-width: 768px) {
-            font-size: 14px;
+            font-size: 16px;
             order: 1;
         }
     }
@@ -541,6 +547,10 @@
         align-items: center;
         column-gap: 118px;
     }
+
+    &__mail {
+        color: #4A2AD3;
+    }
 }
 
 .social-links {
@@ -557,10 +567,10 @@
         height: 40px;
 
         @media (max-width: 425px) {
-        width: 24px;
-        height: 24px;
+            width: 24px;
+            height: 24px;
         }
-        
+
         &:hover {
             transform: scale(1.25);
         }
