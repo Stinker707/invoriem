@@ -234,7 +234,7 @@ img {
   opacity: 70%;
 }
 
-.header-menu-mobi {
+.menu-mobi {
   display: none;
   height: 100vh;
   padding: 0 50px;
@@ -244,20 +244,28 @@ img {
   top: 0;
   left: 0;
   right: 0;
+  overflow: auto;
 }
 @media (max-width: 768px) {
-  .header-menu-mobi--is-visible {
+  .menu-mobi--is-visible {
     display: block;
   }
 }
 @media (max-width: 425px) {
-  .header-menu-mobi {
+  .menu-mobi {
     padding: 0 24px;
   }
 }
-
+.menu-mobi::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 136px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+}
 .menu-mobi__title {
-  padding-top: 136px;
   font-size: 40px;
   font-weight: 800;
   line-height: 56px;

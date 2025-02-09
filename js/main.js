@@ -37,6 +37,6 @@ const body = document.body;
 
 btn.addEventListener('click', function(){
     btn.classList.toggle('header-mobi-close-btn--is-active');
-    menuMobi.classList.toggle('header-menu-mobi--is-visible');
+    menuMobi.classList.toggle('menu-mobi--is-visible');
     body.classList.toggle('no-scroll');
 })
