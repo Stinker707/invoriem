@@ -1,5 +1,15 @@
+* {
+    scrollbar-width: thin; 
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
 body {
     font-family: 'Gilroy';
+    overflow-y: scroll;
 }
 
 img {

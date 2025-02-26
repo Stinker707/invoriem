@@ -2,8 +2,12 @@
     display: none;
 }
 
-.no-scroll {
-    overflow: hidden;
+// .no-scroll {
+//     overflow: hidden;
+// }
+
+.hidden {
+    display: none;
 }
 
 .container {
@@ -120,15 +124,19 @@
 
 .menu-mobi {
     display: none;
-    height: 100vh;
     padding: 0 50px;
     background-color: #fff;
-    position: absolute;
+    // position: absolute;
+    // position: fixed;
     z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // overflow: auto;
+    // overflow-y: scroll;
+    height: 100vh;
+    padding-top: 136px;
 
     @media (max-width: 768px) {
         &--is-visible {
@@ -140,15 +148,15 @@
         padding: 0 24px;
     }
 
-    &::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 136px;
-        background-color: #fff;
-        position: sticky;
-        top: 0;
-    }
+    // &::before {
+    //     content: '';
+    //     display: block;
+    //     width: 100%;
+    //     height: 136px;
+    //     background-color: #fff;
+    //     position: sticky;
+    //     top: 0;
+    // }
 
     &__title {
         font-size: 40px;
@@ -326,10 +334,9 @@
     }
 
     &__description {
-        color: #1F1F1F;
+        color: rgba(31, 31, 31, 0.7);
         font-size: 34px;
         font-weight: 500;
-        opacity: 70%;
 
         @media (max-width: 768px) {
             font-size: 22px;
@@ -578,6 +585,7 @@
         display: block;
         width: 40px;
         height: 40px;
+        transition: 0.3s ease-in-out;
 
         @media (max-width: 425px) {
             width: 24px;
