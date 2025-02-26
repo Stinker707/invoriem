@@ -58,6 +58,7 @@ ul li {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 address {
@@ -120,10 +121,7 @@ legend {
 body {
   font-family: "Gilroy";
   overflow-y: scroll;
-}
-
-img {
-  display: block;
+  overflow-x: hidden;
 }
 
 .none {

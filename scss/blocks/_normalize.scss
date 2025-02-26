@@ -9,9 +9,6 @@
 
 body {
     font-family: 'Gilroy';
-    overflow-y: scroll;
-}
-
-img {
-    display: block;
+    overflow-y: scroll; // костыль для menu-mobi из-за макета
+    overflow-x: hidden; // костыль для слайдера из-за макета
 }
