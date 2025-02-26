@@ -1,12 +1,15 @@
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
-        dots: false,
-        loop: true,
-        autoWidth: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-    });
-});
+new Splide('.splide', {
+    type: 'loop',
+    autoplay: true,
+    gap: '48px',
+    interval: 2000,
+    arrows: false,
+    pagination: false,
+    rewind: true,
+    speed: 2000,
+    autoWidth: true,
+    autoHeight: true,
+}).mount();
 
 const videoBtn = document.querySelector('#video-btn');
 const videoImg = document.querySelector('.video__img');
@@ -33,12 +36,10 @@ document.querySelector('#scroll-btn').addEventListener('click', function () {
 
 const btn = document.querySelector('#close-btn');
 const menuMobi = document.querySelector('#header-menu-mobi');
-// const body = document.body;
 document.querySelector('#close-btn');
 
 btn.addEventListener('click', function(){
     btn.classList.toggle('header-mobi-close-btn--is-active');
     menuMobi.classList.toggle('menu-mobi--is-visible');
-    // body.classList.toggle('no-scroll');
     body.classList.toggle('hidden');
 })

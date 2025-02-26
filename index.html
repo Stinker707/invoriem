@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoriem</title>
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -147,23 +144,27 @@
                     </p>
                 </div>
             </div>
-            <div class="carousel-container">
-                <div class="slider owl-carousel owl-theme">
-                    <div class="slider__item">
-                        <h2 class="city">France</h2>
-                        <img class="city-img" src="img/slider/slider-01.jpg" alt="France">
-                    </div>
-                    <div class="slider__item">
-                        <h2 class="city">Moroco</h2>
-                        <img class="city-img" src="img/slider/slider-02.jpg" alt="Moroco">
-                    </div>
-                    <div class="slider__item">
-                        <h2 class="city">London</h2>
-                        <img class="city-img" src="img/slider/slider-03.jpg" alt="London">
-                    </div>
-                    <div class="slider__item">
-                        <h2 class="city">Portugal</h2>
-                        <img class="city-img" src="img/slider/slider-04.jpg" alt="Portugal">
+            <div class="container">
+                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <h2 class="city">France</h2>
+                                <img class="city-img" src="img/slider/slider-01.jpg" alt="France">
+                            </li>
+                            <li class="splide__slide">
+                                <h2 class="city">Moroco</h2>
+                                <img class="city-img" src="img/slider/slider-02.jpg" alt="Moroco">
+                            </li>
+                            <li class="splide__slide">
+                                <h2 class="city">London</h2>
+                                <img class="city-img" src="img/slider/slider-03.jpg" alt="London">
+                            </li>
+                            <li class="splide__slide">
+                                <h2 class="city">Portugal</h2>
+                                <img class="city-img" src="img/slider/slider-04.jpg" alt="Portugal">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -222,9 +223,7 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>
