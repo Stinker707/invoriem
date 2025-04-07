@@ -34,12 +34,27 @@ document.querySelector('#scroll-btn').addEventListener('click', function () {
     document.querySelector('#case-studies').scrollIntoView({ behavior: 'smooth' });
 });
 
-const btn = document.querySelector('#close-btn');
+const burger = document.querySelector('#burger');
+const closeBtn = document.querySelector('#close-btn');
 const menuMobi = document.querySelector('#header-menu-mobi');
-document.querySelector('#close-btn');
+const body = document.querySelector('#body');
 
-btn.addEventListener('click', function(){
-    btn.classList.toggle('header-mobi-close-btn--is-active');
-    menuMobi.classList.toggle('menu-mobi--is-visible');
-    body.classList.toggle('hidden');
+function updateHeaderPadding(scrollContainer1, scrollContainer2) {
+    // console.log(scrollContainer1.innerWidth, scrollContainer1.clientWidth);
+    // console.dir(scrollContainer2.offsetWidth - scrollContainer2.clientWidth);
+    console.dir(window.innerWidth - document.documentElement.clientWidth);
+}
+
+burger.addEventListener('click', function(){
+    // btn.classList.toggle('header-mobi-close-btn--is-active');
+    menuMobi.classList.add('menu-mobi--is-visible');
+    updateHeaderPadding(body, menuMobi);
+    body.classList.add('no-scroll');
+})
+
+closeBtn.addEventListener('click', function(){
+    // btn.classList.toggle('header-mobi-close-btn--is-active');
+    menuMobi.classList.remove('menu-mobi--is-visible');
+    // updateHeaderPadding(body, menuMobi);
+    body.classList.remove('no-scroll');
 })

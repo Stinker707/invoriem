@@ -9,34 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="header">
-        <div class="header__container container">
-            <nav class="header-nav">
-                <img class="header-nav__logo" src="img/logo.svg" alt="Invoriem project">
-                <ul class="header-nav__links">
-                    <li>
-                        <a href="#" class="header-nav__link">About us</a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn--light">
-                            <span class="btn__text">Let’s Talk</span>
-                            <svg width="28" height="16">
-                                <path
-                                    d="M20.6863 0L19.4657 1.47037C19.4657 1.47037 22.6405 4.76444 24.8317 6.82296C17.1461 6.74074 0 6.8237 0 6.8237V8.58815C0 8.58815 17.1518 8.5237 24.8346 8.58815C22.6434 10.9407 19.4686 14.2356 19.4686 14.2356L20.6863 16L28 7.7037L20.6863 0Z"
-                                    fill="var(--arrow-right-fill)" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <button class="header-mobi-close-btn" id="close-btn">
-                    <div class="header-mobi-close-btn__line"></div>
-                    <div class="header-mobi-close-btn__line"></div>
-                </button>
-            </nav>
-        </div>
-    </header>
+<body id="body">
     <div class="menu-mobi" id="header-menu-mobi">
+        <header class="header">
+            <div class="header__container container">
+                <nav class="header-nav">
+                    <img class="header-nav__logo" src="img/logo.svg" alt="Invoriem project">
+                    <button class="header-mobi-close-btn header-mobi-close-btn--is-active" id="close-btn">
+                        <div class="header-mobi-close-btn__line"></div>
+                        <div class="header-mobi-close-btn__line"></div>
+                    </button>
+                </nav>
+            </div>
+        </header> 
         <h2 class="menu-mobi__title">
             Hello <br>
             Bonjour <br>
@@ -92,19 +77,16 @@
             </div>
         </footer>
     </div>
-    <div id="body">
-        
-        <section class="first-screen">
-            <div class="first-screen__container container">
-                <div class="first-screen__desktop-content">
-                    <div class="first-screen__content">
-                        <h1 class="first-screen__title">
-                            We build dreams, <br> not just walls
-                        </h1>
-                        <p class="first-screen__description">
-                            Fulfill your international property developments with us
-                        </p>
-                        <a href="#" class="first-screen__btn btn btn--dark">
+    <header class="header">
+        <div class="header__container container">
+            <nav class="header-nav">
+                <img class="header-nav__logo" src="img/logo.svg" alt="Invoriem project">
+                <ul class="header-nav__links">
+                    <li>
+                        <a href="#" class="header-nav__link">About us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn--light">
                             <span class="btn__text">Let’s Talk</span>
                             <svg width="28" height="16">
                                 <path
@@ -112,117 +94,143 @@
                                     fill="var(--arrow-right-fill)" />
                             </svg>
                         </a>
-                    </div>
-                </div>
-
-                <div class="first-screen__mobile-content">
-                    <div class="first-screen__content">
-                        <img class="first-screen__logo" src="img/logo.svg" alt="Invoriem project">
-                        <p class="first-screen__description">
-                            We fulfill international <br> property developments
-                        </p>
-                    </div>
-                </div>
-                <div class="first-screen__bottom-block">
-                    <button class="first-screen__arrow-down" id="scroll-btn">
-                        <img src="img/header/arrow-down.svg" alt="arrow down">
-                    </button>
+                    </li>
+                </ul>
+                <button class="header-mobi-close-btn" id="burger">
+                    <div class="header-mobi-close-btn__line"></div>
+                    <div class="header-mobi-close-btn__line"></div>
+                </button>
+            </nav>
+        </div>
+    </header>        
+    <section class="first-screen">
+        <div class="first-screen__container container">
+            <div class="first-screen__desktop-content">
+                <div class="first-screen__content">
+                    <h1 class="first-screen__title">
+                        We build dreams, <br> not just walls
+                    </h1>
+                    <p class="first-screen__description">
+                        Fulfill your international property developments with us
+                    </p>
+                    <a href="#" class="first-screen__btn btn btn--dark">
+                        <span class="btn__text">Let’s Talk</span>
+                        <svg width="28" height="16">
+                            <path
+                                d="M20.6863 0L19.4657 1.47037C19.4657 1.47037 22.6405 4.76444 24.8317 6.82296C17.1461 6.74074 0 6.8237 0 6.8237V8.58815C0 8.58815 17.1518 8.5237 24.8346 8.58815C22.6434 10.9407 19.4686 14.2356 19.4686 14.2356L20.6863 16L28 7.7037L20.6863 0Z"
+                                fill="var(--arrow-right-fill)" />
+                        </svg>
+                    </a>
                 </div>
             </div>
-        </section>
-        <section class="section case-studies" id="case-studies">
-            <div class="container">
-                <div class="case-studies__container">
-                    <h2 class="case-studies__title title">
-                        Case Studies
-                    </h2>
-                    <p class="case-studies__text text">
-                        We deliver a unique and truly bespoke approach to delivering international developments to market,
-                        with over 10
-                        years
-                        success around the world.
+
+            <div class="first-screen__mobile-content">
+                <div class="first-screen__content">
+                    <img class="first-screen__logo" src="img/logo.svg" alt="Invoriem project">
+                    <p class="first-screen__description">
+                        We fulfill international <br> property developments
                     </p>
                 </div>
             </div>
-            <div class="container">
-                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <h2 class="city">France</h2>
-                                <img class="city-img" src="img/slider/slider-01.jpg" alt="France">
-                            </li>
-                            <li class="splide__slide">
-                                <h2 class="city">Moroco</h2>
-                                <img class="city-img" src="img/slider/slider-02.jpg" alt="Moroco">
-                            </li>
-                            <li class="splide__slide">
-                                <h2 class="city">London</h2>
-                                <img class="city-img" src="img/slider/slider-03.jpg" alt="London">
-                            </li>
-                            <li class="splide__slide">
-                                <h2 class="city">Portugal</h2>
-                                <img class="city-img" src="img/slider/slider-04.jpg" alt="Portugal">
-                            </li>
-                        </ul>
-                    </div>
+            <div class="first-screen__bottom-block">
+                <button class="first-screen__arrow-down" id="scroll-btn">
+                    <img src="img/header/arrow-down.svg" alt="arrow down">
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="section case-studies" id="case-studies">
+        <div class="container">
+            <div class="case-studies__container">
+                <h2 class="case-studies__title title">
+                    Case Studies
+                </h2>
+                <p class="case-studies__text text">
+                    We deliver a unique and truly bespoke approach to delivering international developments to market,
+                    with over 10
+                    years
+                    success around the world.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <h2 class="city">France</h2>
+                            <img class="city-img" src="img/slider/slider-01.jpg" alt="France">
+                        </li>
+                        <li class="splide__slide">
+                            <h2 class="city">Moroco</h2>
+                            <img class="city-img" src="img/slider/slider-02.jpg" alt="Moroco">
+                        </li>
+                        <li class="splide__slide">
+                            <h2 class="city">London</h2>
+                            <img class="city-img" src="img/slider/slider-03.jpg" alt="London">
+                        </li>
+                        <li class="splide__slide">
+                            <h2 class="city">Portugal</h2>
+                            <img class="city-img" src="img/slider/slider-04.jpg" alt="Portugal">
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section invoriem">
-            <div class="container">
-                <div class="invoriem__container">
-                    <h2 class="invoriem__title title">
-                        We are Invoriem
-                    </h2>
-                    <p class="invoriem__text text">
-                        We fulfill international property developments
-                    </p>
-                </div>
+    <section class="section invoriem">
+        <div class="container">
+            <div class="invoriem__container">
+                <h2 class="invoriem__title title">
+                    We are Invoriem
+                </h2>
+                <p class="invoriem__text text">
+                    We fulfill international property developments
+                </p>
+            </div>
 
-                <div class="invoriem__content">
-                    <div class="invoriem__video video video-overlay">
-                        <button class="video__btn" id="video-btn"> <img src="img/play-btn.svg" alt="Play"></button>
-                        <img class="video__img" src="img/video-picture.jpg" alt="">
-                        <video class="video__stock" id="video-stock" loop src="video/futuristic-architecture-flower.mp4"
-                            type="video/mp4"></video>
-                    </div>
+            <div class="invoriem__content">
+                <div class="invoriem__video video video-overlay">
+                    <button class="video__btn video-btn" id="video-btn"> <img class="video-btn__img" src="img/play-btn.svg" alt="Play"></button>
+                    <img class="video__img" src="img/video-picture.jpg" alt="">
+                    <video class="video__stock" id="video-stock" loop src="video/futuristic-architecture-flower.mp4"
+                        type="video/mp4"></video>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer class="footer">
-            <div class="footer__container container">
-                <span class="footer__copyright">Copyright © 2020 Invoriem</span>
-                <span class="footer__mail"><a href="mailto:info@invoriem.com">info@invoriem.com</a></span>
-                <div class="footer__socials">
-                    <div class="footer__social-links social-links">
-                        <a href="#" class="social-links__link">
-                            <svg class="social-links__img">
-                                <use xlink:href="img/socials.svg#instagram"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-links__link">
-                            <svg class="social-links__img">
-                                <use xlink:href="img/socials.svg#facebook"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-links__link">
-                            <svg class="social-links__img">
-                                <use xlink:href="img/socials.svg#twitter"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-links__link">
-                            <svg class="social-links__img">
-                                <use xlink:href="img/socials.svg#linkedIn"></use>
-                            </svg>
-                        </a>
-                    </div>
+    <footer class="footer">
+        <div class="footer__container container">
+            <span class="footer__copyright">Copyright © 2020 Invoriem</span>
+            <span class="footer__mail"><a href="mailto:info@invoriem.com">info@invoriem.com</a></span>
+            <div class="footer__socials">
+                <div class="footer__social-links social-links">
+                    <a href="#" class="social-links__link">
+                        <svg class="social-links__img">
+                            <use xlink:href="img/socials.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-links__link">
+                        <svg class="social-links__img">
+                            <use xlink:href="img/socials.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-links__link">
+                        <svg class="social-links__img">
+                            <use xlink:href="img/socials.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-links__link">
+                        <svg class="social-links__img">
+                            <use xlink:href="img/socials.svg#linkedIn"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="js/main.js"></script>
 </body>
