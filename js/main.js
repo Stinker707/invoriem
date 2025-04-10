@@ -23,7 +23,6 @@ videoWrapper.addEventListener('click', function () {
         videoBtn.classList.add('none');
         videoFile.play();
     } else {
-        videoFile.pause();
         videoWrapper.classList.add('video-overlay');
         videoBtn.classList.remove('none');
         videoFile.pause();
