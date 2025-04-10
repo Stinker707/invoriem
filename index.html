@@ -21,7 +21,7 @@
                     </button>
                 </nav>
             </div>
-        </header> 
+        </header>
         <h2 class="menu-mobi__title">
             Hello <br>
             Bonjour <br>
@@ -80,7 +80,7 @@
     <header class="header">
         <div class="header__container container">
             <nav class="header-nav">
-                <img class="header-nav__logo" src="img/logo.svg" alt="Invoriem project">
+                <img class="header-nav__logo" src="img/logo.svg" alt="Invoriem">
                 <ul class="header-nav__links">
                     <li>
                         <a href="#" class="header-nav__link">About us</a>
@@ -102,7 +102,7 @@
                 </button>
             </nav>
         </div>
-    </header>        
+    </header>
     <section class="first-screen">
         <div class="first-screen__container container">
             <div class="first-screen__desktop-content">
@@ -126,52 +126,47 @@
 
             <div class="first-screen__mobile-content">
                 <div class="first-screen__content">
-                    <img class="first-screen__logo" src="img/logo.svg" alt="Invoriem project">
+                    <img class="first-screen__logo" src="img/logo.svg" alt="Invoriem">
                     <p class="first-screen__description">
                         We fulfill international <br> property developments
                     </p>
                 </div>
             </div>
             <div class="first-screen__bottom-block">
-                <button class="first-screen__arrow-down" id="scroll-btn">
-                    <img src="img/header/arrow-down.svg" alt="arrow down">
+                <button class="first-screen__arrow-down arrow-down" id="scroll-btn">
+                    <img class="arrow-down__img" src="img/header/arrow-down.svg" alt="Down">
                 </button>
             </div>
         </div>
     </section>
-    <section class="section case-studies" id="case-studies">
+    <section class="section projects" id="case-studies">
         <div class="container">
-            <div class="case-studies__container">
-                <h2 class="case-studies__title title">
-                    Case Studies
-                </h2>
-                <p class="case-studies__text text">
-                    We deliver a unique and truly bespoke approach to delivering international developments to market,
-                    with over 10
-                    years
-                    success around the world.
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <h2 class="section__title">
+                Case Studies
+            </h2>
+            <p class="section__description">
+                We deliver a unique and truly bespoke approach to delivering international developments to market,
+                with over 10 years success around the world.
+            </p>
+
+            <div class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide">
-                            <h2 class="city">France</h2>
-                            <img class="city-img" src="img/slider/slider-01.jpg" alt="France">
+                        <li class="slide">
+                            <h3 class="slide__title">France</h3>
+                            <img class="slide__img" src="img/slider/slider-01.jpg" alt="France">
                         </li>
-                        <li class="splide__slide">
-                            <h2 class="city">Moroco</h2>
-                            <img class="city-img" src="img/slider/slider-02.jpg" alt="Moroco">
+                        <li class="slide">
+                            <h3 class="slide__title">Moroco</h3>
+                            <img class="slide__img" src="img/slider/slider-02.jpg" alt="Moroco">
                         </li>
-                        <li class="splide__slide">
-                            <h2 class="city">London</h2>
-                            <img class="city-img" src="img/slider/slider-03.jpg" alt="London">
+                        <li class="slide">
+                            <h3 class="slide__title">London</h3>
+                            <img class="slide__img" src="img/slider/slider-03.jpg" alt="London">
                         </li>
-                        <li class="splide__slide">
-                            <h2 class="city">Portugal</h2>
-                            <img class="city-img" src="img/slider/slider-04.jpg" alt="Portugal">
+                        <li class="slide">
+                            <h3 class="slide__title">Portugal</h3>
+                            <img class="slide__img" src="img/slider/slider-04.jpg" alt="Portugal">
                         </li>
                     </ul>
                 </div>
@@ -179,23 +174,22 @@
         </div>
     </section>
 
-    <section class="section invoriem">
+    <section class="section about-us">
         <div class="container">
-            <div class="invoriem__container">
-                <h2 class="invoriem__title title">
-                    We are Invoriem
-                </h2>
-                <p class="invoriem__text text">
-                    We fulfill international property developments
-                </p>
-            </div>
+            <h2 class="section__title">
+                We are Invoriem
+            </h2>
+            <p class="section__description">
+                We fulfill international property developments
+            </p>
 
-            <div class="invoriem__content">
-                <div class="invoriem__video video video-overlay">
-                    <button class="video__btn video-btn" id="video-btn"> <img class="video-btn__img" src="img/play-btn.svg" alt="Play"></button>
-                    <img class="video__img" src="img/video-picture.jpg" alt="">
-                    <video class="video__stock" id="video-stock" loop src="video/futuristic-architecture-flower.mp4" type="video/mp4"></video>
-                </div>
+            <div class="about-us__content video-player video-player--overlay" id="video-player">
+                <button class="video-player__btn video-player-btn" id="video-btn">
+                    <img class="video-player-btn__img" src="img/play-btn.svg" alt="Play">
+                </button>
+                <img class="video-player__img" id="video-img" src="img/video-picture.jpg" alt="">
+                <video class="video-player__video" id="video-file" loop src="video/futuristic-architecture-flower.mp4"
+                    type="video/mp4"></video>
             </div>
         </div>
     </section>
@@ -204,33 +198,32 @@
         <div class="footer__container container">
             <span class="footer__copyright">Copyright © 2020 Invoriem</span>
             <span class="footer__mail"><a href="mailto:info@invoriem.com">info@invoriem.com</a></span>
-            <div class="footer__socials">
-                <div class="footer__social-links social-links">
-                    <a href="#" class="social-links__link">
-                        <svg class="social-links__img">
-                            <use xlink:href="img/socials.svg#instagram"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-links__link">
-                        <svg class="social-links__img">
-                            <use xlink:href="img/socials.svg#facebook"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-links__link">
-                        <svg class="social-links__img">
-                            <use xlink:href="img/socials.svg#twitter"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-links__link">
-                        <svg class="social-links__img">
-                            <use xlink:href="img/socials.svg#linkedIn"></use>
-                        </svg>
-                    </a>
-                </div>
+            <div class="social-links">
+                <a href="#">
+                    <svg class="social-links__img">
+                        <use xlink:href="img/socials.svg#instagram"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="social-links__img">
+                        <use xlink:href="img/socials.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="social-links__img">
+                        <use xlink:href="img/socials.svg#twitter"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="social-links__img">
+                        <use xlink:href="img/socials.svg#linkedIn"></use>
+                    </svg>
+                </a>
             </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -12,18 +12,18 @@ new Splide('.splide', {
 }).mount();
 
 const videoBtn = document.querySelector('#video-btn');
-const videoImg = document.querySelector('.video__img');
-const videoWrapper = document.querySelector('.video-overlay');
-const videoFile = document.querySelector('#video-stock');
+const videoImg = document.querySelector('#video-img');
+const videoPlayer = document.querySelector('#video-player');
+const videoFile = document.querySelector('#video-file');
 
-videoWrapper.addEventListener('click', function () {
+videoPlayer.addEventListener('click', function () {
     if (videoFile.paused) {
         videoImg.classList.add('none');
-        videoWrapper.classList.remove('video-overlay');
+        videoPlayer.classList.remove('video-player--overlay');
         videoBtn.classList.add('none');
         videoFile.play();
     } else {
-        videoWrapper.classList.add('video-overlay');
+        videoPlayer.classList.add('video-player--overlay');
         videoBtn.classList.remove('none');
         videoFile.pause();
     }
@@ -39,21 +39,35 @@ const menuMobi = document.querySelector('#header-menu-mobi');
 const body = document.querySelector('#body');
 
 function updateHeaderPadding(scrollContainer1, scrollContainer2) {
-    // console.log(scrollContainer1.innerWidth, scrollContainer1.clientWidth);
-    // console.dir(scrollContainer2.offsetWidth - scrollContainer2.clientWidth);
-    console.dir(window.innerWidth - document.documentElement.clientWidth);
+    const documentScrollWidth = window.innerWidth - document.documentElement.clientWidth;
+    const menuMobiScrollWidth = menuMobi.offsetWidth - menuMobi.clientWidth;
+    if (documentScrollWidth > menuMobiScrollWidth) {
+        menuMobi.style.setProperty('--scroll-width', documentScrollWidth * -1 + 'px');
+    } else if (documentScrollWidth < menuMobiScrollWidth) {
+        menuMobi.style.setProperty('--scroll-width', menuMobiScrollWidth + 'px');
+    } else {
+        menuMobi.style.setProperty('--scroll-width', '0px');
+    }
 }
 
-burger.addEventListener('click', function(){
-    // btn.classList.toggle('header-mobi-close-btn--is-active');
+burger.addEventListener('click', function () {
     menuMobi.classList.add('menu-mobi--is-visible');
-    updateHeaderPadding(body, menuMobi);
+    updateHeaderPadding();
     body.classList.add('no-scroll');
 })
 
-closeBtn.addEventListener('click', function(){
-    // btn.classList.toggle('header-mobi-close-btn--is-active');
-    menuMobi.classList.remove('menu-mobi--is-visible');
-    // updateHeaderPadding(body, menuMobi);
-    body.classList.remove('no-scroll');
+closeBtn.addEventListener('click', function () {
+    hideMenuMobi();
 })
+
+function hideMenuMobi() {
+    menuMobi.classList.remove('menu-mobi--is-visible');
+    body.classList.remove('no-scroll');
+}
+
+window.addEventListener('resize', function () {
+    if (window.innerWidth > 768) {
+        hideMenuMobi();
+    }
+})
+
