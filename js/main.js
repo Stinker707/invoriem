@@ -1,15 +1,14 @@
-// new Splide('.splide', {
-//     type: 'loop',
-//     autoplay: true,
-//     gap: '48px',
-//     interval: 2000,
-//     arrows: false,
-//     pagination: false,
-//     rewind: true,
-//     speed: 2000,
-//     autoWidth: true,
-//     autoHeight: true,
-// }).mount();
+new Splide('.splide', {
+    type: 'loop',
+    autoplay: true,
+    interval: 2000,
+    arrows: false,
+    pagination: false,
+    rewind: true,
+    speed: 2000,
+    autoWidth: true,
+    autoHeight: true,
+}).mount();
 
 const videoBtn = document.querySelector('#video-btn');
 const videoImg = document.querySelector('#video-img');

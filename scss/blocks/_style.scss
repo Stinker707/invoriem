@@ -1,3 +1,15 @@
+:root {
+    --container-horizontal-padding: 100px;
+
+    @media (max-width: 1024px) {
+        --container-horizontal-padding: 50px;
+    }
+
+    @media (max-width: 425px) {
+        --container-horizontal-padding: 24px;
+    }
+}
+
 .none {
     display: none;
 }
@@ -9,15 +21,7 @@
 .container {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 0 100px;
-
-    @media (max-width: 1024px) {
-        padding: 0 50px;
-    }
-
-    @media (max-width: 425px) {
-        padding: 0 24px;
-    }
+    padding: 0 var(--container-horizontal-padding);
 }
 
 .section {
@@ -219,7 +223,7 @@
 
         &--is-active {
             transform: translateX(var(--scroll-width, 0px));
-            
+
             #{$self} {
                 &__line {
                     &:nth-child(1) {
@@ -377,7 +381,11 @@
     }
 
     &__track {
-        overflow: visible !important;
+        // overflow: visible !important;
+    }
+
+    &__slide {
+        margin-left: var(--container-horizontal-padding) !important;
     }
 }
 

@@ -59,6 +59,20 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+  --container-horizontal-padding: 100px;
+}
+@media (max-width: 1024px) {
+  :root {
+    --container-horizontal-padding: 50px;
+  }
+}
+@media (max-width: 425px) {
+  :root {
+    --container-horizontal-padding: 24px;
+  }
+}
+
 .none {
   display: none;
 }
@@ -70,17 +84,7 @@ body {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 100px;
-}
-@media (max-width: 1024px) {
-  .container {
-    padding: 0 50px;
-  }
-}
-@media (max-width: 425px) {
-  .container {
-    padding: 0 24px;
-  }
+  padding: 0 var(--container-horizontal-padding);
 }
 
 .section {
@@ -419,8 +423,8 @@ body {
     margin-top: 32px;
   }
 }
-.splide__track {
-  overflow: visible !important;
+.splide__slide {
+  margin-left: var(--container-horizontal-padding) !important;
 }
 
 .slide {
